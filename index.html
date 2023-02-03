@@ -14,12 +14,12 @@
 
   <header>
     <div class="navbar">
-      <h2 class="head-logo"><span>b</span>oxing</h2>
+      <h2 class="head-logo">Get<span>Health</span></h2>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Community</a></li>
-          <li><a href="#">Membership</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#program">Our Programs</a></li>
+          <li><a href="#membership">Membership</a></li>
         </ul>
       </nav>
     </div>
@@ -42,6 +42,7 @@
 
     <!--programs section start here-->
     <section class="program">
+      <h3>Our Programs</h3>
       <div class="grid-container">
         <div id="cross-fit">
         <img src="./assets/cross-fit.jpg" alt="cross-fit" width="300px" height="200px">
@@ -62,13 +63,57 @@
     </section>
     <!--programs section end here-->
 
-    <section>
+    <section class="membership">
       <div class="join-us">
         <h3>Join Us</h3>
         <p>Become part of us and used up its benefits</p>
       </div>
       <div class="form"></div>
-      <form action=""></form>
+      <form action="#">
+        <fieldset>
+          <legend>Tell me about You</legend>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="nama" required />
+          </div>
+          <div>
+            <label for="email">email</label>
+            <input type="email" id="Email" required />
+          </div>
+          <div>
+            <label for="phone-number">Phone Number</label>
+            <input type="number" id="phone-number" />
+          </div>
+          <div>
+            <p>Choose Gym Programs</p>
+            <input type="radio" id="boxing" name="sport" value="boxing" />
+            <label for="boxing">Boxing</label>
+            <input type="radio" id="yoga" name="sport" value="yoga" />
+            <label for="yoga">Yoga</label>
+            <input type="radio" id="cross-fit" name="sport" value="cross-fit" />
+            <label for="cross-fit">Cross-fit</label>
+            <input type="radio" id="weightlifting" name="sport" value="weightlifting" />
+            <label for="weightlifting">weightlifting</label>
+          </div>
+        <fieldset>
+          <legend>Choose your weekly schedule</legend>
+          <div>
+          <input type="checkbox" id="monday" name="days" />
+          <label for="monday">Monday</label>
+          <input type="checkbox" id="wednesday" name="days" />
+          <label for="wednesday">wednesday</label>
+          <input type="checkbox" id="friday" name="days" />
+          <label for="friday">Friday</label>
+          <input type="checkbox" id="saturday" name="days" />
+          <label for="saturday">Saturday</label>
+          </div>
+          <div>
+            <p>Any Questions?</p>
+            <textarea rows="4"></textarea>
+          </div>
+        </fieldset>
+        <button type="submit">Send</button>
+      </form>
     </section>
     <!--membership section end here-->
   </body>

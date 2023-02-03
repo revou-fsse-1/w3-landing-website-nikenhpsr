@@ -17,7 +17,7 @@ header {
 }
 
 .head-logo span {
-  color: #f9004d;
+  color: #100869;
 }
 
 .navbar {
@@ -43,8 +43,11 @@ nav ul li a {
   font-size: large;
 }
 
-.hero{
-  height: 720px;
+.hero {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero div {
@@ -64,6 +67,7 @@ p {
 
 .hero h3 {
   font-size: 32px;
+  margin-left: 75px;
 }
 
 .hero p {
@@ -84,13 +88,14 @@ p {
   top: 6px;
   right: 6px;
   margin: 25px;
+  margin-left: 230px;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px ;
   gap: 2px;
-  grid-auto-rows: 100px 100px 100px 100px 100px 100px;
+  grid-auto-rows: 100px 100px 100px;
 }
 
 #cross-fit {
@@ -116,4 +121,48 @@ p {
 #boxing {
   grid-column: 4/6;
   grid-row: 3/6;
+}
+
+.program h3 {
+  color: aliceblue;
+  padding: 8px;
+  margin-right: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+.program {
+  display: flex;
+  justify-content: center;
+  height: 407px;
+}
+
+.join-us h3 {
+  color: aliceblue;
+  font-size: 32px;
+  padding-top: 10px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.join-us p {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.membership form {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+}
+
+.membership form input[type="text"] {
+  width: 100%;
+  padding: 4px 0px;
+  margin: 8px 0;
+  display: block;
 }
