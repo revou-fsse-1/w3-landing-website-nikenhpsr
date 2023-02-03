@@ -1,3 +1,13 @@
+@media screen and (max-width: 1192px) {
+  .mobile {
+    display: block;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
+
 * {
   background-color: rgb(34, 69, 63);
   padding: 0;
@@ -41,6 +51,11 @@ nav ul li a {
   font-weight: bolder;
   justify-content: space-evenly;
   font-size: large;
+}
+
+nav ul li a:hover {
+  color: #f9004d;
+  transition: 0.4s;
 }
 
 .hero {
@@ -89,6 +104,12 @@ p {
   right: 6px;
   margin: 25px;
   margin-left: 230px;
+}
+
+.hero div button:hover {
+  background-color: transparent;
+  border: 0px solid #f9004d;
+  cursor: pointer;
 }
 
 .grid-container {
@@ -160,9 +181,82 @@ p {
   justify-content: center;
 }
 
+.membership legend {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
 .membership form input[type="text"] {
   width: 100%;
   padding: 4px 0px;
   margin: 8px 0;
   display: block;
+  color: aliceblue;
+  border-color: aliceblue;
 }
+
+.membership form input[type="email"] {
+  width: 100%;
+  padding: 4px 0px;
+  margin: 8px 0;
+  display: block;
+  color: aliceblue;
+  border-color: aliceblue;
+}
+
+.membership form input[type="number"] {
+  width: 100%;
+  padding: 4px 0px;
+  margin: 8px 0;
+  display: block;
+  color: aliceblue;
+  border-color: aliceblue;
+}
+
+.membership form input[type="submit"] {
+  width: 100%;
+  padding: 4px 0px;
+  margin: 8px 0;
+  display: block;
+  color: aliceblue;
+  border-color: aliceblue;
+}
+
+.membership button {
+  border-color: aliceblue;
+  color: aliceblue;
+  padding: 10px 30px;
+  border-radius: 50px;
+}
+
+.membership button:hover {
+  background-color: #100869;
+  border: 0px solid #f9004d;
+  cursor: pointer;
+}
+
+footer h3 {
+  color: aliceblue;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+  margin-top: 25px;
+}
+
+.grid-partner {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 8px;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.footer p {
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  color: aliceblue;
+}
+
